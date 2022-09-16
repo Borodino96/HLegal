@@ -1,0 +1,46 @@
+%hero {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+}
+%h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+}
+%h3 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 27px;
+}
+%h3_caps {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+}
+%paragraph {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+%h4 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+}
+%marker {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color:  #E6E6F0;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}

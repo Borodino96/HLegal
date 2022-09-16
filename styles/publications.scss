@@ -1,0 +1,74 @@
+@use "./fonts";
+@use "./mixins";
+@use "./variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+/*HEADER STYLES*/
+
+@import "./publications-header";
+
+/*HEADER STYLES-END*/
+
+/*MAIN STYLES*/
+
+.publications-main {
+  background-color: #F5F5FA;
+  padding: 30px 160px 0;
+  @media screen and (max-width: 1441px) {
+    padding: 30px 60px 0;
+  }
+  @media screen and (max-width: 619px) {
+    padding: 30px;
+  }
+  
+  // .publications-main__news-button
+
+  &__news-button {
+    padding: 2px;
+    background: #E6E6F0;
+    border-radius: 12px;
+    display: inline-block;
+    position:relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.news {
+  @extend %h4;
+  color: #323264;
+  background: #FFFFFF;
+  border-radius: 10px;
+  border: none;
+  padding: 8px 30px;
+  cursor: pointer;
+}
+.articles {
+  @extend %h4;
+  color: #323264;
+  border: none;
+  padding: 8px 30px;
+  background-color: transparent;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background: #F5F5FA;
+    border-radius: 10px;
+  }
+}
+
+
+@import "./publications-block_changed";
+
+/*MAIN STYLES-END*/
+
+/*FOOTER STYLES*/
+
+@import "./publications-footer";
+
+/*FOOTER STYLES*/

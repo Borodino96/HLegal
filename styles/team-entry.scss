@@ -1,0 +1,233 @@
+@use "./fonts";
+@use "./mixins";
+@use "./variables";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat';
+}
+
+/*HEADER STYLES*/
+
+@import "./publications-header";
+@media screen and (max-width: 1693px) {
+    .header{
+      padding: 0 60px;
+  }
+}
+
+/*HEADER STYLES-END*/
+
+.main {
+  padding: 0 280px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin: 60px 0;
+@media screen and (max-width: 1693px) {
+  padding: 0 180px;
+}
+@media screen and (max-width: 1369px) {
+  padding: 0 60px;
+}
+@media screen and (max-width: 770px) {
+  position: relative;
+}
+@media screen and (max-width: 749px) {
+  padding: 0 30px;
+}
+@media screen and (max-width: 689px) {
+  flex-direction: column;
+  row-gap: 30px;
+}
+@media screen and (max-width: 500px) {
+  padding: 0 30px;
+}
+  // .main__img
+
+  &__img {
+    @media screen and (max-width: 770px) {
+      position: absolute;
+      top:0;
+    }
+    @media screen and (max-width: 689px) {
+      position: static;
+    }
+    img {
+      display: block;
+      width: 400px;
+      height: 500px;
+      border-radius: 12px;
+      @media screen and (max-width: 1129px) {
+        width: 300px;
+        height: 375px;
+      }
+     @media screen and (max-width: 689px) {
+       height: 315px;
+       width: 100%;
+       object-fit: contain;
+      } 
+    }
+  }
+
+  // .main__text
+
+  &__text {
+    padding-top: 30px;
+    border-top: 4px solid #E6E6F0;
+    @media screen and (max-width: 770px) {
+      margin-top: 146px;
+    }
+    @media screen and (max-width: 689px) {
+      margin: 0;
+    }
+  }
+
+  // .main__text-entry
+
+  &__text-entry {
+    @extend %paragraph;
+    color: #000000;
+  }
+}
+.job-title {
+
+  // .job-title__intro
+
+  &__intro {
+      @media screen and (max-width: 770px) {
+        margin: 116px 0 0 330px;
+      }
+      @media screen and (max-width: 689px) {
+        margin: 0;
+      }
+  }
+
+  &__intro-info {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 30px;
+    @media screen and (max-width: 1129px) {
+      flex-direction: column;
+      column-gap: 0;
+      row-gap: 10px;
+    }
+  }
+
+  // .job-title__header
+
+  &__header {
+    @extend %hero;
+    margin-bottom: 15px;
+  }
+
+  // .job-title__name
+
+  &__name {
+    @include mixins.style_text (400,14px,22px,0,#B3B3BA);
+  }
+
+  // .job-title__email
+
+  &__email {
+    @include mixins.style_text (400,16px,20px,0, #24A3FF);
+    transition: all .3s ease-in-out;
+    position: relative;
+    padding-left: 16px;
+     @media screen and (max-width: 1129px) {
+      padding: 0;
+     }
+    &:hover {
+      color: #F0145A;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #E6E6F0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+       @media screen and (max-width: 1129px) {
+        display: none;
+       }
+    }
+  }
+
+  // .job-title__linkedin
+
+  &__linkedin {
+    @include mixins.style_text (400,16px,20px,0, #24A3FF);
+    transition: all .3s ease-in-out;
+    position: relative;
+    padding-left: 16px;
+     @media screen and (max-width: 1129px) {
+      padding: 0;
+     }
+    &:hover {
+      color: #F0145A;
+    }
+    &:before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      background: #E6E6F0;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+       @media screen and (max-width: 1129px) {
+        display: none;
+       }
+    }
+  }
+}
+.link {
+}
+.seocnd-text {
+  margin-top: 30px;
+}
+.subtitle {
+  margin: 30px 0 15px;
+  @extend %h3_caps;
+  color: #000000;
+}
+
+/*FOOTER STYLES*/
+
+@import "./services-footer";
+.footer {
+  position: static;
+}
+
+/*FOOTER STYLES-END*/
+
+@media screen and (max-width: 1012px) {
+  .header {
+    padding: 0 30px;
+  }
+  .footer {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 519px) {
+  .header {
+    padding: 0 20px;
+  }
+  
+}
+@media screen and (max-width: 519px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 0px;
+  }
+  
+}
