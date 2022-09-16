@@ -2,10 +2,11 @@
 @use "./mixins";
 @use "./variables";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @extend %reset;
+}
+  body {
   font-family: 'Montserrat';
+  scroll-behavior: smooth;
 }
 
 /*HEADER STYLES*/

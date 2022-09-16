@@ -54,10 +54,14 @@
 }
 
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
+}
+
+body {
   font-family: "Montserrat";
+  scroll-behavior: smooth;
 }
 
 /*HEADER STYLES*/
@@ -101,10 +105,9 @@
 @media screen and (max-width: 500px) {
   .header {
     grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 60% 1fr;
     grid-row-gap: 0;
     padding: 0;
-    grid-template-columns: 60% 1fr;
     margin: 0;
   }
 }

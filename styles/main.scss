@@ -2,9 +2,9 @@
 @use "./fonts";
 @use "./variables";
 * {
-  box-sizing: border-box;
-  margin: 0 ;
-  padding: 0;
+  @extend %reset;
+}
+  body {
   font-family: 'Montserrat';
   scroll-behavior: smooth;
 }
