@@ -470,6 +470,11 @@ body {
   text-decoration: none;
 }
 
+.publications-block__item-img {
+  object-fit: cover;
+  object-position: top;
+}
+
 /*MAIN STYLES-END*/
 /*FOOTER STYLES*/
 .footer {

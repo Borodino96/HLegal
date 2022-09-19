@@ -65,6 +65,10 @@
 
 
 @import "./publications-block_changed";
+.publications-block__item-img {
+    object-fit: cover;
+    object-position: top;
+}
 
 /*MAIN STYLES-END*/
 

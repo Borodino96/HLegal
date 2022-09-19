@@ -499,6 +499,11 @@ body {
     padding-top: 362px;
   }
 }
+@media screen and (max-width: 500px) {
+  .what-we-can-do-better {
+    padding-top: 176px;
+  }
+}
 .what-we-can-do-better:after {
   content: "";
   background: #CACADB;
